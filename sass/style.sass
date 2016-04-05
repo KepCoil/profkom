@@ -4,46 +4,51 @@
 @import "../app/libs/bootstrap/css/bootstrap"
 @import "tools.sass"
 
+header
+	.container
+		padding: 0
+	img
+		width: 100%
+.line-head
+	text-align: center
+	background-color: $green
+	color: #fff
+	font-family: "RobotoRegular", Tahoma, sans-serif
+	p
+		font-size: 14px
+		line-height: 14px
+		margin: 0
+		padding: 7px 0
+.navbar
+	border-radius: 0
+	font-family: "RobotoCondensedRegular", Tahoma, sans-serif
+	font-size: 16px
+	letter-spacing: 1px
 
-
-body
-	font-size: 15px
-	line-height: 20px
 .navbar-inverse
 	text-align: center
+	border: none
+	background-color: $green
 	.container
 		line-height: 0
+		.navbar-nav 
+			> li
+				&.active
+					a
+						background-color: darken($green, 8%)
+				> a
+					color: #fff
+					padding: 16px 25px
+					&:hover,
+					&:focus
+						background-color: darken($green, 8%)
+
+
 .mobile-logo-icon
 	display: inline-block
 	line-height: 20px
+	margin: 15px 0 15px 15px
 
-// nav
-// 	.nav
-// 		>li
-// 			position: static
-
-// .navbar-collapse .navbar-nav
-// 	list-style: none
-// 	// position: relative
-// 	text-align: center
-// 	border-top: 2px solid #ccc
-// 	border-bottom: 2px solid #ccc
-// 	li
-// 		//display: inline-block
-// 		a
-// 			color: #ccc
-// 			display: block
-// 			padding: 8px 12px
-// 			text-decoration: none
-// 			text-transform: uppercase
-// 			&:hover
-
-// .sliding-line
-// 	height: 2px
-// 	background: #6da047
-// 	position: absolute !important
-// 	top: 2px
-	left: 0
 
 
 //ALWAYS END
